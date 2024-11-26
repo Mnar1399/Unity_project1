@@ -6,32 +6,33 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-   public float moveSpeed=5f;
-   public float dodgeSpeed=15f;
-   public float dodgeDuration=0.2f;
-   public InputActionAsset inputActions; //connect it to the input system
+    private Vector2 moveInput;
+    private Rigidbody2D rb;
+    public InputActionAsset inputActions; //connect it to the input system
+    private Animator anim;
 
-  public float circleRadius = 5f; // radius of circle
-   private Vector2 moveInput;
-   private Rigidbody2D rb;
-   private bool isDodging=false;
-   public float attackRange=1.5f;
-  public int damage = 5; 
+    public float moveSpeed=5f;
+    public float dodgeSpeed=15f;
+    public float dodgeDuration=0.2f;
+
+    public float circleRadius = 5f; // radius of circle
+    private bool isDodging = false;
+    public float attackRange=1.5f;
+    public int damage = 5; 
 
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
-
+        anim = GetComponent<Animator>();
 
         var playerActions = inputActions.FindActionMap("Player");
         playerActions.FindAction("Move").performed += OnMove;
         playerActions.FindAction("Move").canceled += OnMove;//cancel the player move if he dose not press the button
         playerActions.FindAction("Dodge").performed += OnDodge;
         playerActions.FindAction("Attack").performed += OnAttack;
-      playerActions.Enable(); //activate the action map
+        playerActions.Enable(); //activate the action map
 
     }
 
@@ -39,13 +40,17 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         if(!isDodging){
-             if (moveInput != Vector2.zero){
+            if (moveInput != Vector2.zero){
             Vector2 move = moveInput * moveSpeed * Time.deltaTime;
             rb.MovePosition(rb.position+move);}
         }
     }
 
-public void OnMove(InputAction.CallbackContext context)
+    public void Update()
+    {
+        anim
+    }
+    public void OnMove(InputAction.CallbackContext context)
 {
     moveInput = context.ReadValue<Vector2>();
 }
