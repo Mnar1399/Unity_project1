@@ -672,7 +672,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: -0.31, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 11.1, y: 0.39, z: 1}
+    m_Scale: {x: 15.06, y: 0.39, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -871,7 +871,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 3
       scalar: 50
-      minScalar: 10
+      minScalar: 100
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1548,7 +1548,7 @@ ParticleSystem:
     y:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.17
+      scalar: 2
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -4906,7 +4906,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 1, b: 1, a: 0.40392157}
+  m_Color: {r: 1, g: 0.39167064, b: 0.37421376, a: 0.40392157}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4923,7 +4923,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5055967133551588484}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:

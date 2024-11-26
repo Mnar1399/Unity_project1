@@ -20,7 +20,8 @@ public class PlayerArena : MonoBehaviour
         Debug.Log("You died! ");
         // Death Animation
 
-        gameObject.SetActive(false); //player hides
+        // gameObject.SetActive(false);                     // i'll modify this later.... - Jess
+        // Destroy(gameObject,10f);
         Debug.Log("player is dead!!");
     }
 

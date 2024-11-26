@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-
 public class PlayerMovement : MonoBehaviour
 {
     private Vector2 moveInput;
@@ -11,13 +10,13 @@ public class PlayerMovement : MonoBehaviour
     public InputActionAsset inputActions; //connect it to the input system
     private Animator anim;
 
-    public float moveSpeed=5f;
-    public float dodgeSpeed=15f;
-    public float dodgeDuration=0.2f;
+    public float moveSpeed = 5f;
+    public float dodgeSpeed = 15f;
+    public float dodgeDuration = 0.2f;
 
-    public float circleRadius = 5f; // radius of circle
     private bool isDodging = false;
-    
+    public bool facingRight = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,30 +25,33 @@ public class PlayerMovement : MonoBehaviour
 
         var playerActions = inputActions.FindActionMap("Player");
         playerActions.FindAction("Move").performed += OnMove;
-        playerActions.FindAction("Move").canceled += OnMove;//cancel the player move if he dose not press the button
+        playerActions.FindAction("Move").canceled += OnMove; // Cancel the movement when the button is released
         playerActions.FindAction("Dodge").performed += OnDodge;
-        
-        playerActions.Enable(); //activate the action map
 
+        playerActions.Enable(); // Activate the action map
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
-        if(!isDodging)
+        if (!isDodging)
         {
             if (moveInput != Vector2.zero)
             {
-                Vector2 move = moveInput * moveSpeed * Time.deltaTime; //  Calculate the input
-                rb.MovePosition(rb.position+move); // Move 
+                Vector2 move = moveInput * moveSpeed * Time.deltaTime; // Calculate the input
+                rb.MovePosition(rb.position + move); // Move the player
             }
         }
     }
 
-    public void Update()
+    void Update()
     {
-        
+        // Trigger run animation when the player is moving
+        anim.SetBool("isMoving", moveInput != Vector2.zero);
+
+        // Flip the player sprite horizontally based on horizontal input
+        Flip();
     }
+
     public void OnMove(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>(); // Read the movement input
@@ -57,12 +59,11 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnDodge(InputAction.CallbackContext context)
     {
-       if(context.performed && !isDodging)
-       {
-            StartCoroutine(Dodge()); // Dodge
-       }
+        if (context.performed && !isDodging)
+        {
+            StartCoroutine(Dodge()); // Perform the dodge
+        }
     }
-
 
     private IEnumerator Dodge()
     {
@@ -73,26 +74,15 @@ public class PlayerMovement : MonoBehaviour
         isDodging = false;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void Flip()
     {
-        if (collision.CompareTag("Arena"))
+        // Only flip if moving left or right
+        if ((moveInput.x < 0 && facingRight) || (moveInput.x > 0 && !facingRight))
         {
-            Die();
+            facingRight = !facingRight;
+            Vector3 localScale = transform.localScale;
+            localScale.x *= -1f; // Flip the sprite by inverting the X scale
+            transform.localScale = localScale;
         }
     }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Arena"))
-        {
-            Die();
-        }
-    }
-
-    private void Die()
-    {
-        gameObject.SetActive(false); //player hides
-        Debug.Log("player is dead!!");
-    }
-
-
 }

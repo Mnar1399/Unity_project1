@@ -26,9 +26,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5343083651971246439}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.07874, y: 10.986695, z: 1}
+  m_LocalScale: {x: 0.07874, y: 15.829592, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7208786512890323719}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 1, b: 1, a: 0.40392157}
+  m_Color: {r: 1, g: 0.39167064, b: 0.37421376, a: 0.40392157}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -93,7 +93,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5343083651971246439}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -1002,7 +1002,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 3
       scalar: 50
-      minScalar: 10
+      minScalar: 100
       maxCurve:
         serializedVersion: 2
         m_Curve:
