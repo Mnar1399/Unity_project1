@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerArena : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private Animator anim;
     void Start()
     {
         
@@ -13,18 +13,20 @@ public class PlayerArena : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        anim = GetComponent<Animator>();
     }
     private void Die()
     {
         Debug.Log("You died! ");
-        // Death Animation
-
-        // gameObject.SetActive(false);                     // i'll modify this later.... - Jess
-        // Destroy(gameObject,10f);
+        
         Debug.Log("player is dead!!");
     }
 
+    public void DestroyPlayer()
+    {
+        gameObject.SetActive(false);
+        Destroy(gameObject, 5f);
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -38,6 +40,7 @@ public class PlayerArena : MonoBehaviour
         if (collision.CompareTag("Arena"))
         {
             Die();
+            anim.SetTrigger("IsDied");
         }
     }
 
