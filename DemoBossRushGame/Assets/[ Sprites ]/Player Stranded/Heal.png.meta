@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 46d149b89ede40641819db22ba0058b9
+guid: 89625c172b0b37c4c886dd7161940d4d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player-Death_0
+      name: Heal_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 112
-        height: 112
+        width: 18
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec2f76a8f431798448e0076d50945bc2
-      internalID: -1947895320
+      spriteID: ee0b4532641a9644f9eb289cdb618bee
+      internalID: -542809730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Death_1
+      name: Heal_1
       rect:
         serializedVersion: 2
-        x: 112
+        x: 18
         y: 0
-        width: 112
-        height: 112
+        width: 18
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 769fe726b6e1a6043b44ccf96cb480d5
-      internalID: 1263422849
+      spriteID: 202c4772f2469d74a81287923ff63f99
+      internalID: 1965838348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Death_2
+      name: Heal_2
       rect:
         serializedVersion: 2
-        x: 224
+        x: 36
         y: 0
-        width: 112
-        height: 112
+        width: 18
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a7092c76de8902439e9fc1cbd9f642b
-      internalID: -181566273
+      spriteID: 63f63cfe171155648a64cb5d89a07d2b
+      internalID: 89944503
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Death_3
+      name: Heal_3
       rect:
         serializedVersion: 2
-        x: 336
+        x: 54
         y: 0
-        width: 112
-        height: 112
+        width: 18
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a0b1524a8eebd94aa267cc7c7886ea5
-      internalID: 2012712219
+      spriteID: 8368cc7568ad779488b3e5a8aefff20b
+      internalID: 212773660
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Death_4
+      name: Heal_4
       rect:
         serializedVersion: 2
-        x: 448
+        x: 72
         y: 0
-        width: 112
-        height: 112
+        width: 18
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a9bff668f7f9214c8f9cc662e487230
-      internalID: 722970888
+      spriteID: 52c4b24c93b6aea4c8f02c6762e32457
+      internalID: -154117822
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Death_5
+      name: Heal_5
       rect:
         serializedVersion: 2
-        x: 560
+        x: 90
         y: 0
-        width: 112
-        height: 112
+        width: 18
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8590f8eba0f7697409ffb252c64b0cad
-      internalID: -1220343554
+      spriteID: ffc9d6c2c0a201e4f872c6f166619c1d
+      internalID: 662422570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Death_6
+      name: Heal_6
       rect:
         serializedVersion: 2
-        x: 672
+        x: 108
         y: 0
-        width: 112
-        height: 112
+        width: 18
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +263,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0905cc2ad914a3e4eb6249c97ef48163
-      internalID: 1783887884
+      spriteID: 6585b8ef43544004e82415c015bb169f
+      internalID: 1674094765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Death_7
+      name: Heal_7
       rect:
         serializedVersion: 2
-        x: 784
+        x: 126
         y: 0
-        width: 112
-        height: 112
+        width: 18
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,20 +284,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30c370af1b37d6e44bc77d46dc77fe57
-      internalID: -1400164497
+      spriteID: 2acae95ff33e9634a940e824d0d1e113
+      internalID: -899609326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Death_8
+      name: Heal_8
       rect:
         serializedVersion: 2
-        x: 896
+        x: 144
         y: 0
-        width: 112
-        height: 112
+        width: 18
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,20 +305,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 846b0fa180a9de645bc9ee20fcd4550d
-      internalID: -1009190946
+      spriteID: 89c8f308620ad964da8e897083707e6b
+      internalID: 1620198935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Death_9
+      name: Heal_9
       rect:
         serializedVersion: 2
-        x: 1008
+        x: 162
         y: 0
-        width: 112
-        height: 112
+        width: 18
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,20 +326,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a3037ae83b872b44bed5f461b9710b7
-      internalID: -1981580154
+      spriteID: 37fb42b8d416af14aa8b21f0255236b4
+      internalID: 862433738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Death_10
+      name: Heal_10
       rect:
         serializedVersion: 2
-        x: 1120
+        x: 198
         y: 0
-        width: 112
-        height: 112
+        width: 18
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,20 +347,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d464eb040f9fea449b10319fd50de0d
-      internalID: 674469140
+      spriteID: 708df7f33ac225c4798bc9361b0cfa28
+      internalID: -535386766
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Death_11
+      name: Heal_11
       rect:
         serializedVersion: 2
-        x: 1232
+        x: 216
         y: 0
-        width: 112
-        height: 112
+        width: 18
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,20 +368,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db0fa70a58236214e8ef89b11e5b9810
-      internalID: -1824951269
+      spriteID: 04d299a414ab51d408817ad5b632fcc1
+      internalID: -523678654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Death_12
+      name: Heal_12
       rect:
         serializedVersion: 2
-        x: 1344
+        x: 234
         y: 0
-        width: 112
-        height: 112
+        width: 18
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,8 +389,218 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6842f440585c72445b93a9843529f21f
-      internalID: -185700127
+      spriteID: 5f943fe40cbedca43b1e3e4e00b31318
+      internalID: -1088209674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_13
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 0
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81188fe78709f5b4baf67100148ccd5a
+      internalID: 58818094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_14
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc6b3e1475d32a49825e6c27532ae58
+      internalID: 853447461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_15
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840169e21e37f8c4cafdb2b8a9d7ee72
+      internalID: 409610975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_16
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 0
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6a2293837d63e4ca7e82782c6b8c4a
+      internalID: -1219141589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_17
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 0
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5073b9427fca8cd4eb1810c30a49c34b
+      internalID: 1689570464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_18
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 0
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e9ce639dae34441af74a5044741a5f
+      internalID: 1807612829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_19
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff76795d4ac3cc478cf4fceacebc395
+      internalID: -367976763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_20
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 0
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1bd93a0f7749f4c9a42b604bf02290
+      internalID: -1424089783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_21
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 0
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ecba812cd82fbe4093c85951e606a83
+      internalID: -1543279815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_22
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 0
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1891f5583fe1a8343b050822d5a086ee
+      internalID: 1815878028
       vertices: []
       indices: 
       edges: []
@@ -406,19 +616,29 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      player-Death_0: -1947895320
-      player-Death_1: 1263422849
-      player-Death_10: 674469140
-      player-Death_11: -1824951269
-      player-Death_12: -185700127
-      player-Death_2: -181566273
-      player-Death_3: 2012712219
-      player-Death_4: 722970888
-      player-Death_5: -1220343554
-      player-Death_6: 1783887884
-      player-Death_7: -1400164497
-      player-Death_8: -1009190946
-      player-Death_9: -1981580154
+      Heal_0: -542809730
+      Heal_1: 1965838348
+      Heal_10: -535386766
+      Heal_11: -523678654
+      Heal_12: -1088209674
+      Heal_13: 58818094
+      Heal_14: 853447461
+      Heal_15: 409610975
+      Heal_16: -1219141589
+      Heal_17: 1689570464
+      Heal_18: 1807612829
+      Heal_19: -367976763
+      Heal_2: 89944503
+      Heal_20: -1424089783
+      Heal_21: -1543279815
+      Heal_22: 1815878028
+      Heal_3: 212773660
+      Heal_4: -154117822
+      Heal_5: 662422570
+      Heal_6: 1674094765
+      Heal_7: -899609326
+      Heal_8: 1620198935
+      Heal_9: 862433738
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
