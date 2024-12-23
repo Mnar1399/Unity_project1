@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 67ee2cba6f0e8f34daeb0190c71810b5
+guid: 2511f4ff64a546742b52de93e0832425
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,148 +123,253 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 04 Stranded - Pack 4 back up-Slash Down_0
+      name: 04 Stranded - Pack 4 back up-Idle Up_0
       rect:
         serializedVersion: 2
         x: 0
         y: 1
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3125, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b64b7525e7eb2649a719df6621846c4
-      internalID: 189005619
+      spriteID: 55acfa129673ba34f81162863f297181
+      internalID: 1070520728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 04 Stranded - Pack 4 back up-Slash Down_1
+      name: 04 Stranded - Pack 4 back up-Idle Up_1
       rect:
         serializedVersion: 2
         x: 64
         y: 1
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3125, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55a5fa99e65cb344e85f9d65c8569445
-      internalID: 1626860437
+      spriteID: 01b480418217580418d8cc13a9b19fb0
+      internalID: -1689745825
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 04 Stranded - Pack 4 back up-Slash Down_2
+      name: 04 Stranded - Pack 4 back up-Idle Up_2
       rect:
         serializedVersion: 2
         x: 128
         y: 1
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3125, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b28dd54c48a7e3549a16303097012be7
-      internalID: -14155721
+      spriteID: b450660c38cb4354abbdee88ace31d6d
+      internalID: -1293682588
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 04 Stranded - Pack 4 back up-Slash Down_3
+      name: 04 Stranded - Pack 4 back up-Idle Up_3
       rect:
         serializedVersion: 2
         x: 192
         y: 1
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3125, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5666ed525d6f67a408c353468efee9c1
-      internalID: 764095996
+      spriteID: 4fa5affce83614042916bfa7d888dfca
+      internalID: 1724588349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 04 Stranded - Pack 4 back up-Slash Down_4
+      name: 04 Stranded - Pack 4 back up-Idle Up_4
       rect:
         serializedVersion: 2
         x: 256
         y: 1
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3125, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdb8896c1abb520428614c4c6459aff7
-      internalID: 2128034286
+      spriteID: 144a2f2d0d4c0a14eb2cdd5b71c2e250
+      internalID: 333433868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 04 Stranded - Pack 4 back up-Slash Down_5
+      name: 04 Stranded - Pack 4 back up-Idle Up_5
       rect:
         serializedVersion: 2
         x: 320
         y: 1
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3125, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c8fa3298670e074590a7606046f5845
-      internalID: 107379836
+      spriteID: 41a8a4f2f3b65334fbe0d4d343510a4e
+      internalID: 1903932916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 04 Stranded - Pack 4 back up-Slash Down_6
+      name: 04 Stranded - Pack 4 back up-Idle Up_6
       rect:
         serializedVersion: 2
         x: 384
         y: 1
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3125, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b50d94a7d8b3c24dbb698225dce98e6
-      internalID: 30166963
+      spriteID: 1080cc60d7dc9184a8977a837712b4d8
+      internalID: 1983495173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04 Stranded - Pack 4 back up-Idle Up_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.3125, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d176afc0b88f7d449a73233eb6ac081
+      internalID: 1038568125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04 Stranded - Pack 4 back up-Idle Up_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.3125, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38fe02d88e7cd2047813eafbf63c014a
+      internalID: -1311292197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04 Stranded - Pack 4 back up-Idle Up_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.3125, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ffc0b255869204a8ae0e1961312c1b
+      internalID: 1755640158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04 Stranded - Pack 4 back up-Idle Up_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.3125, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19cb59c4a1394e4ab186c04acc481b0
+      internalID: -1209169090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04 Stranded - Pack 4 back up-Idle Up_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.3125, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba6da15d2e6603418e3f83381f5f01a
+      internalID: 1499942853
       vertices: []
       indices: 
       edges: []
@@ -280,13 +385,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      04 Stranded - Pack 4 back up-Slash Down_0: 189005619
-      04 Stranded - Pack 4 back up-Slash Down_1: 1626860437
-      04 Stranded - Pack 4 back up-Slash Down_2: -14155721
-      04 Stranded - Pack 4 back up-Slash Down_3: 764095996
-      04 Stranded - Pack 4 back up-Slash Down_4: 2128034286
-      04 Stranded - Pack 4 back up-Slash Down_5: 107379836
-      04 Stranded - Pack 4 back up-Slash Down_6: 30166963
+      04 Stranded - Pack 4 back up-Idle Up_0: 1070520728
+      04 Stranded - Pack 4 back up-Idle Up_1: -1689745825
+      04 Stranded - Pack 4 back up-Idle Up_10: -1209169090
+      04 Stranded - Pack 4 back up-Idle Up_11: 1499942853
+      04 Stranded - Pack 4 back up-Idle Up_2: -1293682588
+      04 Stranded - Pack 4 back up-Idle Up_3: 1724588349
+      04 Stranded - Pack 4 back up-Idle Up_4: 333433868
+      04 Stranded - Pack 4 back up-Idle Up_5: 1903932916
+      04 Stranded - Pack 4 back up-Idle Up_6: 1983495173
+      04 Stranded - Pack 4 back up-Idle Up_7: 1038568125
+      04 Stranded - Pack 4 back up-Idle Up_8: -1311292197
+      04 Stranded - Pack 4 back up-Idle Up_9: 1755640158
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
