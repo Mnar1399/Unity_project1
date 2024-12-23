@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private Vector2 moveInput;
     private Rigidbody2D rb;
-    public InputActionAsset inputActions; //connect it to the input system
+    public InputActionAsset inputActions;
     private Animator anim;
 
     public float moveSpeed = 5f;
@@ -16,8 +17,8 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isDodging = false;
     public bool facingRight = true;
+    private Vector2 lastMove = Vector2.down; // Last Move Direction // Default direction is Down Animation //
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -45,11 +46,42 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        // Trigger run animation when the player is moving
-        anim.SetBool("isMoving", moveInput != Vector2.zero);
+        // Animation Parameter
+        anim.SetFloat("Horizontal", moveInput.x);
+        anim.SetFloat("Vertical", moveInput.y);
+        anim.SetFloat("Speed", moveInput.sqrMagnitude);
 
-        // Flip the player sprite horizontally based on horizontal input
-        Flip();
+        if(moveInput.sqrMagnitude > 0.01f) // Player is moving
+        {
+            lastMove = moveInput; // Update the last move direction
+        }
+        else
+        {
+            if(Mathf.Abs(lastMove.y) > MathF.Abs(lastMove.x))
+            {
+                if(lastMove.y > 0)
+                {
+                    anim.Play("Up Idle");
+                }
+                else
+                {
+                    anim.Play("Down Idle");
+                }
+            }
+            else
+            {
+                if (lastMove.x > 0)
+                {
+                    anim.Play("Right Idle");
+                }
+                else
+                {
+                    anim.Play("Left Idle");
+                }
+            }
+        }
+        }
+
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -61,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (context.performed && !isDodging)
         {
-            StartCoroutine(Dodge()); // Perform the dodge
+            StartCoroutine(Dodge()); // Dodge
         }
     }
 
@@ -74,15 +106,14 @@ public class PlayerMovement : MonoBehaviour
         isDodging = false;
     }
 
-    private void Flip()
+   /* private void Flip()
     {
-        // Only flip if moving left or right
         if ((moveInput.x < 0 && facingRight) || (moveInput.x > 0 && !facingRight))
         {
             facingRight = !facingRight;
             Vector3 localScale = transform.localScale;
-            localScale.x *= -1f; // Flip the sprite by inverting the X scale
+            localScale.x *= -1f; // Flip the sprite
             transform.localScale = localScale;
         }
-    }
+    }*/
 }
