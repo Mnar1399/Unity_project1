@@ -32,9 +32,9 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
-    private void Update()
+    private void Update() // Testing
     {
-        if (Input.GetKeyDown(KeyCode.P) && !isAttacking)
+        if (Input.GetKeyDown(KeyCode.K) && !isAttacking)
         {
             PerformAttack();
         }

@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
         playerActions.FindAction("Move").performed += OnMove;
         playerActions.FindAction("Move").canceled += OnMove;
         playerActions.FindAction("Dodge").performed += OnDodge;
+        playerActions.FindAction("Attack").performed += OnAttack;
 
         playerActions.Enable();
     }
@@ -50,26 +51,21 @@ public class PlayerMovement : MonoBehaviour
         {
             // Update the last move direction
             lastMoveDirection = moveInput;
-        }
-        else
-        {
-            // Handle directional idle based on the last move direction
-            if (Mathf.Abs(lastMoveDirection.y) > Mathf.Abs(lastMoveDirection.x))
+
+            if(Mathf.Abs(moveInput.x) > Mathf.Abs(moveInput.y))
             {
-                // Vertical direction takes precedence
-                if (lastMoveDirection.y > 0)
-                    anim.Play("Up Idle");
-                else
-                    anim.Play("Down Idle");
+                anim.SetInteger("LastDirection", moveInput.x > 0 ? 3 : 2);
             }
             else
             {
-                // Horizontal direction
-                if (lastMoveDirection.x > 0)
-                    anim.Play("Right Idle");
-                else
-                    anim.Play("Left Idle");
+                anim.SetInteger("LastDirection", moveInput.y > 0 ? 1 : 0);
             }
+        }
+        
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            PerformAttack();
         }
     }
 
@@ -86,6 +82,28 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private void OnAttack(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            PerformAttack(); // 
+        }
+    }
+
+    public void PerformAttack()
+    {
+        anim.SetFloat("Horizontal", lastMoveDirection.x);
+        anim.SetFloat("Vertical", lastMoveDirection.y);
+        anim.SetTrigger("Attack");
+
+        StartCoroutine(ResetAttackTrigger());
+    }
+
+    private IEnumerator ResetAttackTrigger()
+    {
+        yield return null;
+        anim.ResetTrigger("Attack");
+    }
     private IEnumerator Dodge()
     {
         isDodging = true;
