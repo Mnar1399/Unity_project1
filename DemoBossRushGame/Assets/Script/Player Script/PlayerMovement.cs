@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
             // Update the last move direction
             lastMoveDirection = moveInput;
 
-            if(Mathf.Abs(moveInput.x) > Mathf.Abs(moveInput.y))
+            if (Mathf.Abs(moveInput.x) > Mathf.Abs(moveInput.y))
             {
                 anim.SetInteger("LastDirection", moveInput.x > 0 ? 3 : 2);
             }
@@ -61,12 +61,7 @@ public class PlayerMovement : MonoBehaviour
                 anim.SetInteger("LastDirection", moveInput.y > 0 ? 1 : 0);
             }
         }
-        
 
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            PerformAttack();
-        }
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -86,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (context.performed)
         {
-            PerformAttack(); // 
+            PerformAttack();
         }
     }
 

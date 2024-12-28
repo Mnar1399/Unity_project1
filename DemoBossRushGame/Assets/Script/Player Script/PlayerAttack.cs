@@ -11,7 +11,6 @@ public class PlayerAttack : MonoBehaviour
 
     public float attackRange = 1.5f;
     public int damage = 5;
-    private bool isAttacking = false; // Prevent repeated attacks
 
     void Start()
     {
@@ -20,21 +19,12 @@ public class PlayerAttack : MonoBehaviour
 
         var playerActions = inputActions.FindActionMap("Player");
         playerActions.FindAction("Attack").performed += OnAttack;
-
         playerActions.Enable();
     }
 
     private void OnAttack(InputAction.CallbackContext context)
     {
-        if (context.performed && !isAttacking)
-        {
-            // PerformAttack();
-        }
-    }
-
-    private void Update() // Testing
-    {
-        if (Input.GetKeyDown(KeyCode.K) && !isAttacking)
+        if (context.performed)
         {
             PerformAttack();
         }
@@ -42,39 +32,13 @@ public class PlayerAttack : MonoBehaviour
 
     private void PerformAttack()
     {
-        if (isAttacking) return;
+        Vector2 attackDirection = playerMovement.lastMoveDirection;
 
-        Debug.Log("Attack On!");
-        isAttacking = true; // Set flag to prevent repeated attacks
-
-        Vector2 lastMoveDirection = playerMovement.lastMoveDirection;
-
-        // Determine the attack animation based on movement direction
-        if (Mathf.Abs(lastMoveDirection.y) > Mathf.Abs(lastMoveDirection.x))
-        {
-            if (lastMoveDirection.y > 0f)
-            {
-                anim.SetTrigger("UpAttack");
-            }
-            else
-            {
-                anim.SetTrigger("DownAttack");
-            }
-        }
-        else
-        {
-            if (lastMoveDirection.x > 0f)
-            {
-                anim.SetTrigger("RightAttack");
-            }
-            else
-            {
-                anim.SetTrigger("LeftAttack");
-            }
-        }
-
-        // Detect enemies in attack range
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position + (Vector3)lastMoveDirection * attackRange, attackRange);
+        // OverlapCircle to detect enemies
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(
+            transform.position + (Vector3)attackDirection * attackRange,
+            attackRange
+        );
 
         foreach (Collider2D enemy in hitEnemies)
         {
@@ -87,19 +51,20 @@ public class PlayerAttack : MonoBehaviour
                 }
             }
         }
-    }
 
-    // Animation event functions to reset the attack flag
-    public void AttackAnimationComplete()
-    {
-        isAttacking = false;
+        // Update animation
+        anim.SetFloat("Horizontal", attackDirection.x);
+        anim.SetFloat("Vertical", attackDirection.y);
+        anim.SetTrigger("Attack");
     }
-
 
     private void OnDrawGizmosSelected()
     {
-        // Draw the attack range when the object is selected in the sceneS
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position + (Vector3)playerMovement.lastMoveDirection * attackRange, attackRange);
+        if (playerMovement != null)
+        {
+            Vector3 attackPosition = transform.position + (Vector3)playerMovement.lastMoveDirection * attackRange;
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(attackPosition, attackRange);
+        }
     }
 }
