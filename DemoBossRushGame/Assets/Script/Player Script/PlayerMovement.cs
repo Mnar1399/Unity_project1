@@ -25,8 +25,7 @@ public class PlayerMovement : MonoBehaviour
         playerActions.FindAction("Move").performed += OnMove;
         playerActions.FindAction("Move").canceled += OnMove;
         playerActions.FindAction("Dodge").performed += OnDodge;
-        playerActions.FindAction("Attack").performed += OnAttack;
-
+       
         playerActions.Enable();
     }
 
@@ -77,28 +76,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void OnAttack(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-            PerformAttack();
-        }
-    }
-
-    public void PerformAttack()
-    {
-        anim.SetFloat("Horizontal", lastMoveDirection.x);
-        anim.SetFloat("Vertical", lastMoveDirection.y);
-        anim.SetTrigger("Attack");
-
-        StartCoroutine(ResetAttackTrigger());
-    }
-
-    private IEnumerator ResetAttackTrigger()
-    {
-        yield return null;
-        anim.ResetTrigger("Attack");
-    }
     private IEnumerator Dodge()
     {
         isDodging = true;

@@ -40,6 +40,7 @@ public class PlayerAttack : MonoBehaviour
             attackRange
         );
 
+        // Attack Area
         foreach (Collider2D enemy in hitEnemies)
         {
             if (enemy.CompareTag("Enemy"))
@@ -56,8 +57,15 @@ public class PlayerAttack : MonoBehaviour
         anim.SetFloat("Horizontal", attackDirection.x);
         anim.SetFloat("Vertical", attackDirection.y);
         anim.SetTrigger("Attack");
+
+        StartCoroutine(ResetAttackTrigger());
     }
 
+    private IEnumerator ResetAttackTrigger()
+    {
+        yield return null;
+        anim.ResetTrigger("Attack");
+    }
     private void OnDrawGizmosSelected()
     {
         if (playerMovement != null)
